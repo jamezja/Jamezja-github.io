@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Jane</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="mainTitle">This message</h1>
+        <h1 id="welcomeMessage">to Jane</h1>
+        <button id="showMessageBtn" class="btn">Open</button>
+
+        <div id="birthdayMessage" class="hidden card-effect">
+            <h2 class="birthday-message">💕 Happy Birthday to baby 💕</h2>
+            <h2 class="birthday-message">17 . 11 . 2024 </h2>
+            <img id="randomImage" src="" alt="Random Image" class="random-image" style="width: 150px; height: 240px;">
+            <h2 class="birthday-message"> 26 Years</h2>
+            <p id="messageLine" class="hidden"></p>
+            <p id="finalMessage" class="hidden">กดไปต่อด้วยนะครับ</p>
+            <button class="btn" onclick="showMemories()" style="display:none;" id="nextButton">"ก็ด้ะๆ เซ้าซี้จัง"</button>
+        </div>
+
+        <div id="memories" class="hidden">
+            <h2>our memories when i met you</h2>
+            <div class="memories-container">
+                <!-- รูปภาพอยู่ทางซ้าย -->
+                <div >
+                    <img src="images/k.png" alt="Floating Asset 1" class="floating" style="width: 50px; height: 50px;">
+                    <p>Gallery of us</p>
+                    <p>(กดรูปเพื่อเปลี่ยน)</p>
+                    
+                    
+                <div class="image-stack" onclick="showNextImage()" style="width: 150px; height: 240px;">
+                    <img src="images/2.jpg" alt="Memory 1" class="memory-image active">
+                    <img src="images/3.jpg" alt="Memory 2" class="memory-image hidden">  
+                    <img src="images/4.jpg" alt="Memory 3" class="memory-image hidden">  
+                    <img src="images/5.jpg" alt="Memory 4" class="memory-image hidden">  
+                    <img src="images/6.jpg" alt="Memory 5" class="memory-image hidden">
+                    <img src="images/7.jpg" alt="Memory 6" class="memory-image hidden"> 
+                    <img src="images/8.jpg" alt="Memory 7" class="memory-image hidden"> 
+                    <img src="images/9.jpg" alt="Memory 8" class="memory-image hidden">
+                    <img src="images/10.jpg" alt="Memory 9" class="memory-image hidden"> 
+                    <img src="images/11.jpg" alt="Memory 10" class="memory-image hidden">
+                    <img src="images/12.jpg" alt="Memory 11" class="memory-image hidden">
+                    <img src="images/13.jpg" alt="Memory 12" class="memory-image hidden">
+                    <img src="images/14.jpg" alt="Memory 13" class="memory-image hidden">                       
+                </div>
+                </div>
+        
+                <!-- ข้อความอยู่ทางขวา -->
+                <div class="text-content" style="text-align: start;">
+                    <p>ถึงคนที่น่ารักที่สุด</p>
+                    <p>วันนี้วันเกิดใครน้าา ตั้งแต่เค้าที่ได้รู้จักเธอก็วันที่ 6 กันยาคนจนถึงตอนนี้รวม 2 เดือนหน่อยๆ ถึงแม้ว่าเราจะไม่เคยเจอกันและอยู่ไกลกัน แต่ว่าชอบโมเมนต์ที่เกี่ยวกับเพลงของเธอกับเค้าหรือแม้กระทั่งที่เราได้ใช้เวลาด้วยกันตามรูปทางด้านซ้ายเลยครับขอบคุณนะครับที่ดี ใส่ใจ น่ารัก ให้เวลากับเค้า อาจจะฟังดูไกลไปหน่อยสำหรับในตอนนี้แต่ว่าอยากเดินคู่ไปกับเธอในอนาคตนะครับ สำหรับเค้าเธอก็เหมือนเพลงเพราะมีความหมายเค้ารู้สึกโชคดีที่เจอเธอนะครับ</p>
+                    <p>สุดท้ายแล้วว อย่าไปหวั่นไหวกับใครนะ หมาเด็กก็ต้องคู่กับหมาแก่นะครับ</p>
+                    <p style="text-align: end;">จากหมาเด็ก  ิ ิ</p>
+                    <button class="btn" onclick="endMessage()">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="endMessage" class="hidden">
+            <h2>Thank you for coming </h2>
+            <h3>Im all urs krubb</h3>
+            <p>i love you 🩷</p>
+        </div>
+    </div>
+
+    <div class="floating-assets hidden">
+        <div class="floating-asset left">
+            <img src="images/m.png" alt="Floating Asset 1" class="floating">
+        </div>
+        <div class="floating-asset right">
+            <img src="images/k.png" alt="Floating Asset 2" class="floating" style="width: 80px;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
